@@ -116,7 +116,7 @@ function calendar(Month, Year) {
     if(week_day == 0)
       calendar_html += '</tr><tr>';
 
-    // Do something different for the current day.
+    // Higlight the current day.
     console.log(currentYear, Year);
     if(currentDate == day_counter && currentMonth == Month && currentYear == parseInt(Year))
       calendar_html += '<td style = "text-align: center; background-color:#ff0043;"><b>' + day_counter + '</b></td>';
