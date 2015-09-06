@@ -27,28 +27,28 @@ function calendarweek () {
   var sunday = new Date(firstday);
   var monday = new Date(secondday);
   var tuesday = new Date(thirdday);
-  var wednesday = new Date(fourthtday);
+  var wednesday = new Date(fourthday);
   var thursday = new Date(fifthday);
-  var friday = new Date(fsixthday);
+  var friday = new Date(sixthday);
   var sartuday = new Date(seventhday);
 
-  var finalfirst = sunday.getDate()+" "+(monthNames[sunday.getMonth()+1]).toupperCase;
-  var finalsecond = monday.getDate()+" "+(monthNames[monday.getMonth()+1]).toupperCase;
-  var finalthird = tuesday.getDate()+" "+(monthNames[tuesday.getMonth()+1]).toupperCase;
-  var finalfourth = wednesday.getDate()+" "+(monthNames[wednesday.getMonth()+1]).toupperCase;
-  var finalfifth = thursday.getDate()+" "+(monthNames[thursday.getMonth()+1]).toupperCase;
-  var finalsixth = friday.getDate()+" "+(monthNames[friday.getMonth()+1]).toupperCase;
-  var finalseventh = sartuday.getDate()+" "+(monthNames[sartuday.getMonth()+1]).toupperCase;
+  var finalfirst = sunday.getDate()+" "+(monthNames[sunday.getMonth()+1]).toUpperCase();
+  var finalsecond = monday.getDate()+" "+(monthNames[monday.getMonth()+1]).toUpperCase();
+  var finalthird = tuesday.getDate()+" "+(monthNames[tuesday.getMonth()+1]).toUpperCase();
+  var finalfourth = wednesday.getDate()+" "+(monthNames[wednesday.getMonth()+1]).toUpperCase();
+  var finalfifth = thursday.getDate()+" "+(monthNames[thursday.getMonth()+1]).toUpperCase();
+  var finalsixth = friday.getDate()+" "+(monthNames[friday.getMonth()+1]).toUpperCase();
+  var finalseventh = sartuday.getDate()+" "+(monthNames[sartuday.getMonth()+1]).toUpperCase();
   
   console.log(finalfirst);
 
 
 
-  document.getElementById("sun").value.innerHTML += finalfirst;
-  document.getElementById("mon").value.innerHTML += finalsecond;
-  document.getElementById("tue").value.innerHTML += finalthird;
-  document.getElementById("wed").value.innerHTML += finalfourth;
-  document.getElementById("thur").value.innerHTML += finalfifth;
-  document.getElementById("fri").value.innerHTML += finalsixth;
-  document.getElementById("sat").value.innerHTML += finalseventh;
+  document.getElementById("sun").innerHTML += finalfirst;
+  document.getElementById("mon").innerHTML += finalsecond;
+  document.getElementById("tue").innerHTML += finalthird;
+  document.getElementById("wed").innerHTML += finalfourth;
+  document.getElementById("thur").innerHTML += finalfifth;
+  document.getElementById("fri").innerHTML += finalsixth;
+  document.getElementById("sat").innerHTML += finalseventh;
 }

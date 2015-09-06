@@ -57,3 +57,6 @@ select {
 .monthtable tbody tr  {
     height: 80px;
 }
+#weektable {
+    margin-left: 350px;
+}
